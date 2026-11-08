@@ -1,0 +1,93 @@
+/* S&B APPLIANCES — black, neon green and silver */
+:root{--green:#43ff00;--green2:#29d900;--black:#050705;--panel:#0e130d;--line:#293a25;--white:#f6f8f4;--muted:#b8c1b5}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:25px}
+body{background:var(--black);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.ticker{background:var(--green);color:#050705;text-align:center;padding:12px 10px;font-weight:900;font-size:clamp(11px,2vw,15px);letter-spacing:3px}
+.ticker span{padding:0 5px}
+.site-header{max-width:1240px;margin:auto;padding:20px 26px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand img{width:116px;height:104px;object-fit:contain}
+.site-header nav{display:flex;gap:30px;align-items:center}
+.site-header nav a{font-size:12px;font-weight:900;letter-spacing:1.5px;transition:.2s}
+.site-header nav a:hover,.text-link:hover{color:var(--green)}
+.menu-toggle{display:none;background:transparent;border:1px solid var(--line);color:var(--green);font-size:26px;padding:7px 14px;border-radius:12px}
+.hero{max-width:1240px;margin:auto;padding:76px 26px 88px;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.eyebrow{font-size:13px;font-weight:900;letter-spacing:5px;color:var(--green);margin-bottom:22px}
+.hero h1,.enquiry-intro h2{font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-3px;font-weight:1000;margin-bottom:28px}
+.hero h1 span,.section-heading h2 span,.enquiry-intro h2 span{color:var(--green);text-shadow:0 0 24px #43ff0035}
+.hero-lead{font-size:clamp(17px,2vw,21px);color:var(--muted);max-width:620px;margin-bottom:30px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:14px 25px;font-weight:900;letter-spacing:1.5px;border:2px solid var(--green);transition:.2s;cursor:pointer;font-size:13px}
+.button-green{background:var(--green);color:#050705}
+.button-green:hover{background:transparent;color:var(--green);box-shadow:0 0 22px #43ff0040}
+.button-outline{color:var(--green);background:transparent}
+.button-outline:hover{background:var(--green);color:#050705}
+.slogan{font-size:15px;font-weight:900;letter-spacing:3px;margin-top:34px}
+.hero-art{border:1px solid #3d5c32;padding:8px;box-shadow:0 0 34px #43ff0020;background:#090d08}
+.hero-art img{width:100%;max-height:480px;object-fit:contain}
+.section{padding:90px 26px}
+.section-heading{text-align:center;max-width:760px;margin:0 auto 42px}
+.section-heading .eyebrow{margin-bottom:12px}
+.section-heading h2{font-size:clamp(36px,5vw,56px);line-height:1.05;margin-bottom:14px;font-weight:1000}
+.section-heading>p:last-child{color:var(--muted)}
+.buying{max-width:1240px;margin:auto}
+.category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.category-card{background:linear-gradient(145deg,#141d12,#0b0e0a);border:1px solid var(--line);padding:27px;min-height:160px;transition:.2s}
+.category-card:hover{border-color:var(--green);transform:translateY(-4px);box-shadow:0 0 22px #43ff001b}
+.category-card>span{color:var(--green);font-size:12px;font-weight:900;letter-spacing:2px}
+.category-card h3{font-size:19px;margin:12px 0 6px}
+.category-card p{color:var(--muted);font-size:14px}
+.stock{background:#090d08;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stock-grid{max-width:850px;margin:auto}
+.stock-card{display:grid;grid-template-columns:1fr 1fr;background:var(--panel);border:1px solid #35512d}
+.stock-image{min-height:300px;background:linear-gradient(135deg,#111b0e,#070907);position:relative;display:grid;place-items:center}
+.stock-image img{width:100%;height:100%;min-height:300px;object-fit:cover}
+.stock-image.image-missing:after{content:"BIKE PHOTO TO BE ADDED";color:var(--green);font-weight:900;letter-spacing:2px;text-align:center;padding:25px}
+.stock-image>span{position:absolute;top:14px;left:14px;background:var(--green);color:#050705;padding:6px 11px;font-size:11px;font-weight:1000;letter-spacing:1px}
+.stock-info{padding:30px;align-self:center}
+.stock-info h3{font-size:23px;line-height:1.15;margin-bottom:12px}
+.stock-info p,.stock-note{color:var(--muted);font-size:14px;margin-bottom:20px}
+.text-link{color:var(--green);font-size:12px;font-weight:900;letter-spacing:1px}
+.stock-note{text-align:center;margin:25px 0 0}
+.enquiry-section{max-width:1180px;margin:auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:start}
+.enquiry-intro{position:sticky;top:25px}
+.enquiry-intro h2{font-size:clamp(42px,5.6vw,68px)}
+.enquiry-intro>p:not(.eyebrow){color:var(--muted);font-size:17px}
+.email-note{border-left:3px solid var(--green);padding:15px 18px;margin-top:34px;background:#0d130b}
+.email-note strong{font-size:12px;letter-spacing:2px;color:var(--green)}
+.email-note p{font-size:14px;color:var(--muted);margin-top:7px}
+.enquiry-form{background:#0d120c;border:1px solid #35512d;padding:clamp(22px,4vw,38px);box-shadow:0 0 35px #43ff0012}
+.enquiry-form h3{font-size:28px;color:var(--green)}
+.form-intro,.field-help,.privacy-note{font-size:12px;color:var(--muted)}
+.enquiry-form label{display:block;font-size:13px;font-weight:800;margin:17px 0 7px}
+.enquiry-form input:not([type=checkbox]),.enquiry-form select,.enquiry-form textarea{display:block;width:100%;background:#151d13;border:1px solid #3a4c34;color:white;padding:14px;font:inherit;font-size:14px;border-radius:0}
+.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{outline:1px solid var(--green);border-color:var(--green)}
+.enquiry-form input[type=file]{font-size:12px;padding:11px}
+.enquiry-form input[type=file]::file-selector-button{background:var(--green);border:0;padding:9px 12px;margin-right:12px;font-weight:800}
+.enquiry-form textarea{resize:vertical}
+.form-two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field-help{margin-top:7px}
+.file-names{font-size:12px;color:var(--green);margin-top:8px;overflow-wrap:anywhere}
+.enquiry-form .consent{display:flex;align-items:flex-start;gap:10px;font-weight:400;line-height:1.4}
+.consent input{margin-top:3px;accent-color:var(--green)}
+.consent span{font-size:12px;color:var(--muted)}
+.submit-button{width:100%;margin-top:22px}
+.privacy-note{text-align:center;margin-top:14px}
+.footer{text-align:center;padding:34px 20px;background:#030503;border-top:1px solid var(--line)}
+.footer img{width:76px;height:68px;object-fit:contain;margin:0 auto 8px}
+.footer p{font-size:12px;font-weight:900;letter-spacing:3px;color:var(--green)}
+.footer small{display:block;color:#879181;font-size:11px;margin-top:12px}
+@media(max-width:820px){.site-header{padding:14px 20px}.brand img{width:88px;height:78px}.menu-toggle{display:block}.site-header nav{display:none;position:absolute;z-index:20;top:155px;left:0;right:0;padding:22px;background:#080d07;border-bottom:2px solid var(--green);flex-direction:column;align-items:stretch;gap:0}.site-header nav.open{display:flex}.site-header nav a{padding:13px 5px;border-bottom:1px solid #1d2919}.hero{grid-template-columns:1fr;padding:48px 22px 65px;gap:32px}.hero h1{font-size:clamp(48px,12vw,76px)}.hero-art{max-width:650px}.section{padding:65px 22px}.enquiry-section{grid-template-columns:1fr;gap:30px}.enquiry-intro{position:static}.category-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.ticker{letter-spacing:1.5px;font-size:10px}.hero{padding-top:35px}.hero h1{letter-spacing:-2px}.hero-actions{display:grid}.button{width:100%}.category-grid{grid-template-columns:1fr}.stock-card{grid-template-columns:1fr}.stock-image,.stock-image img{min-height:250px}.form-two{grid-template-columns:1fr;gap:0}.enquiry-form{padding:22px}.section-heading h2{font-size:38px}}
+
+
+/* Recently sold stock */
+.sold-heading { margin: 54px 0 22px; }
+.sold-heading h3 { margin: 8px 0; font-size: clamp(1.8rem, 5vw, 3rem); letter-spacing: .06em; }
+.sold-heading h3 span { color: var(--green, #39ff00); }
+.sold-grid { margin-top: 18px; }
+.sold-card .stock-image { position: relative; }
+.sold-card .stock-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sold-card .stock-image .sold-label { background: #d92d2d; color: #fff; }
