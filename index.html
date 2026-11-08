@@ -1,264 +1,108 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="S&B Appliances buys bikes, quads, copper, games consoles, power tools and much more. Get in touch for a quote.">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="S&B Appliances buys and resells unwanted items. Get in touch for a no-obligation enquiry.">
   <title>S&B Appliances | We Buy Almost Anything</title>
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-  <div class="top-bar">
-    WE BUY • WE SELL • WE REUSE • BEST PRICES PAID
-  </div>
-
-  <header>
-    <div class="logo">
-      <img src="assets/sb-logo.jpeg" alt="S&B Appliances">
-    </div>
-
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-    <nav id="navigation">
-      <a href="#home">HOME</a>
+  <div class="topline">BUYING • SELLING • REUSING — BEST PRICES PAID</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="S&B Appliances home">
+      <img src="assets/sb-logo.jpeg" alt="S&B Appliances logo">
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav">
       <a href="#what-we-buy">WHAT WE BUY</a>
-      <a href="#stock">OUR STOCK</a>
-      <a href="#enquiry">SELL TO US</a>
+      <a href="#stock">AVAILABLE STOCK</a>
+      <a href="#sell">SELL TO US</a>
       <a href="#contact">CONTACT</a>
     </nav>
   </header>
 
   <main>
-
-    <section class="hero" id="home">
-
-      <div class="hero-text">
-        <p class="small-heading">WELCOME TO S&B APPLIANCES</p>
-
-        <h1>
-          WE BUY<br>
-          <span>ALMOST ANYTHING!</span>
-        </h1>
-
-        <p>
-          Got something you no longer need?
-          Turn it into cash!
-          We buy bikes, quads, copper, games consoles,
-          power tools, appliances and much more.
-        </p>
-
-        <a href="#enquiry" class="green-button">
-          SELL YOUR ITEM
-        </a>
-
-        <p class="tagline">
-          IF THE PRICE IS RIGHT, THE CASH IS RIGHT!
-        </p>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">S&B APPLIANCES</p>
+        <h1>WE BUY<br><span>ALMOST ANYTHING.</span></h1>
+        <p class="hero-lede">Got something you no longer need? Turn it into cash. From copper and consoles to bikes, quads and power tools — get in touch with S&amp;B.</p>
+        <div class="actions">
+          <a class="btn btn-green" href="#sell">SELL YOUR ITEM</a>
+          <a class="btn btn-outline" href="#stock">BROWSE OUR STOCK</a>
+        </div>
+        <p class="strapline">IF THE PRICE IS RIGHT, THE CASH IS RIGHT.</p>
       </div>
-
-      <div class="hero-image">
-        <img src="assets/sb-buying-flyer.jpeg" alt="S&B Appliances buying advert">
+      <div class="hero-art">
+        <img src="assets/sb-buying-flyer.jpeg" alt="S&B Appliances buying flyer showing examples of items purchased">
       </div>
-
     </section>
 
-    <section class="categories" id="what-we-buy">
+    <section class="ticker" aria-label="Items we buy">
+      <span>COPPER</span><b>✦</b><span>GAMES CONSOLES</span><b>✦</b><span>BIKES</span><b>✦</b><span>QUADS</span><b>✦</b><span>POWER TOOLS</span><b>✦</b><span>APPLIANCES</span>
+    </section>
 
-      <h2>WHAT WE <span>BUY</span></h2>
-
-      <p>Anything considered – get in touch today!</p>
-
+    <section class="section" id="what-we-buy">
+      <div class="section-heading">
+        <p class="eyebrow">TURN UNWANTED INTO CASH</p>
+        <h2>WHAT WE <span>BUY</span></h2>
+        <p>Have something different? Ask us anyway. If the price is right, we're interested.</p>
+      </div>
       <div class="category-grid">
-
-        <div class="category-card">
-          <h3>♻ COPPER & METALS</h3>
-          <p>Copper, metals and scrap.</p>
-        </div>
-
-        <div class="category-card">
-          <h3>🎮 GAMES CONSOLES</h3>
-          <p>Xbox, PlayStation and gaming equipment.</p>
-        </div>
-
-        <div class="category-card">
-          <h3>🏍 BIKES & QUADS</h3>
-          <p>Motorbikes, dirt bikes, bicycles and quads.</p>
-        </div>
-
-        <div class="category-card">
-          <h3>🛠 POWER TOOLS</h3>
-          <p>Drills, saws and workshop equipment.</p>
-        </div>
-
-        <div class="category-card">
-          <h3>🏠 APPLIANCES</h3>
-          <p>Household appliances and equipment.</p>
-        </div>
-
-        <div class="category-card">
-          <h3>＋ ANYTHING ELSE</h3>
-          <p>Have something different? Ask us!</p>
-        </div>
-
+        <article class="category-card"><div class="category-icon">♻</div><h3>Copper &amp; Metals</h3><p>Copper, metal and suitable scrap.</p></article>
+        <article class="category-card"><div class="category-icon">🎮</div><h3>Games Consoles</h3><p>Xbox, PlayStation and gaming gear.</p></article>
+        <article class="category-card"><div class="category-icon">🏍</div><h3>Bikes &amp; Quads</h3><p>Motorbikes, bicycles and quads.</p></article>
+        <article class="category-card"><div class="category-icon">🛠</div><h3>Power Tools</h3><p>Drills, saws and workshop tools.</p></article>
+        <article class="category-card"><div class="category-icon">🏠</div><h3>Appliances</h3><p>Household appliances and equipment.</p></article>
+        <article class="category-card"><div class="category-icon">＋</div><h3>Other Items</h3><p>Not listed? Send us an enquiry.</p></article>
       </div>
     </section>
 
-    <section class="stock" id="stock">
-
-      <h2>OUR <span>AVAILABLE STOCK</span></h2>
-
-      <p>Take a look at what we currently have for sale.</p>
-
-      <div class="stock-grid">
-
-        <div class="stock-card">
-          <div class="stock-photos">
-            <img src="assets/bike-for-sale-1.jpeg" alt="Grey and black dirt bike">
-            <img src="assets/bike-for-sale-2.jpeg" alt="Grey and black dirt bike second view">
-          </div>
-
-          <div class="stock-details">
-            <span class="available-label">AVAILABLE</span>
-            <h3>GREY & BLACK DIRT BIKE</h3>
-            <p>Currently available. Contact us for more information.</p>
-            <a href="#enquiry" class="green-button">ENQUIRE NOW</a>
-          </div>
-        </div>
-
-      </div>
-
-      <h2 class="sold-heading">RECENTLY <span>SOLD</span></h2>
-
-      <div class="sold-grid">
-
-        <div class="sold-card">
-          <img src="assets/sold-bike-1.jpeg" alt="White dirt bike">
-          <span>SOLD</span>
-          <h3>White dirt bike</h3>
-        </div>
-
-        <div class="sold-card">
-          <img src="assets/sold-bike-2.jpeg" alt="Blue and orange dirt bike">
-          <span>SOLD</span>
-          <h3>Blue and orange dirt bike</h3>
-        </div>
-
-      </div>
-
-    </section>
-
-    <section class="enquiry" id="enquiry">
-
-      <div class="enquiry-intro">
-        <p class="small-heading">QUICK & EASY</p>
-
+    <section class="sell-section" id="sell">
+      <div class="sell-intro">
+        <p class="eyebrow">QUICK &amp; EASY ENQUIRY</p>
         <h2>GOT SOMETHING<br><span>TO SELL?</span></h2>
-
-        <p>
-          Complete our enquiry form, tell us what you have
-          and upload photographs of your item.
-          We'll be in touch!
-        </p>
+        <p>Fill in the form and tell us what you've got. Add your contact details and we'll get back to you.</p>
+        <ul><li>No-obligation enquiry</li><li>Tell us about almost any item</li><li>Photos can be shared when we contact you</li></ul>
       </div>
-
-      <form id="enquiryForm">
-
-        <h2>SELL TO S&B</h2>
-
-        <label for="customerName">Your full name</label>
-        <input type="text" id="customerName" name="name" required>
-
-        <label for="phone">Contact number</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <label for="email">Email address</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="category">What are you selling?</label>
-        <select id="category" name="category" required>
-          <option value="">Choose an item</option>
-          <option>Motorbike</option>
-          <option>Dirt bike</option>
-          <option>Bicycle</option>
-          <option>Quad</option>
-          <option>Copper / metals</option>
-          <option>Xbox / PlayStation</option>
-          <option>Power tools</option>
-          <option>Appliances</option>
-          <option>Scrap</option>
-          <option>Other</option>
-        </select>
-
-        <label for="item">Item make / model</label>
-        <input type="text" id="item" name="item">
-
-        <label for="condition">Item condition</label>
-        <select id="condition" name="condition" required>
-          <option value="">Choose condition</option>
-          <option>Brand new</option>
-          <option>Excellent</option>
-          <option>Good</option>
-          <option>Used</option>
-          <option>Needs repair</option>
-          <option>For parts / scrap</option>
-        </select>
-
-        <label for="price">How much are you looking for?</label>
-        <input type="text" id="price" name="price" placeholder="Optional">
-
-        <label for="description">Tell us about your item</label>
-        <textarea id="description" name="description" rows="5" required></textarea>
-
-        <label for="photos">Upload photographs of your item</label>
-        <input
-          type="file"
-          id="photos"
-          name="photos"
-          accept="image/*"
-          multiple
-          required
-        >
-
-        <p class="upload-note">
-          You can select multiple photographs.
-        </p>
-
-        <button type="submit" class="green-button">
-          SUBMIT ENQUIRY
-        </button>
-
-        <p id="formMessage"></p>
-
+      <form class="enquiry-form" id="enquiry-form">
+        <h3>SELL TO S&amp;B</h3>
+        <label>Your name<input name="name" required placeholder="Full name"></label>
+        <label>Phone or email<input name="contact" required placeholder="How can we reach you?"></label>
+        <label>What do you have?<select name="category" required><option value="">Choose a category</option><option>Copper / metals / scrap</option><option>Games console</option><option>Motorbike / quad</option><option>Bicycle</option><option>Power tools</option><option>Appliance</option><option>Other</option></select></label>
+        <label>Item details<textarea name="details" rows="4" required placeholder="Make, model, condition, anything we should know..."></textarea></label>
+        <label>Asking price (optional)<input name="price" placeholder="e.g. £100"></label>
+        <button class="btn btn-green full" type="submit">PREPARE MY ENQUIRY</button>
+        <p class="form-note">This starter version opens an email draft on your device. We'll connect a live enquiry inbox and photo uploads when the business email is provided.</p>
+        <p class="form-status" id="form-status" role="status"></p>
       </form>
-
     </section>
 
-    <section class="contact" id="contact">
-
-      <h2>LET'S MAKE A DEAL!</h2>
-
-      <p>Got something to sell? Get in touch with S&B Appliances.</p>
-
-      <a href="#enquiry" class="green-button">SEND AN ENQUIRY</a>
-
+    <section class="section stock-section" id="stock">
+      <div class="section-heading">
+        <p class="eyebrow">FRESH FINDS</p>
+        <h2>AVAILABLE <span>STOCK</span></h2>
+        <p>Items available to buy will be listed here. Check back for new arrivals.</p>
+      </div>
+      <div class="empty-stock">
+        <div class="empty-mark">S&amp;B</div>
+        <h3>NEW STOCK COMING SOON</h3>
+        <p>We're getting the catalogue ready. In the meantime, contact us to ask what we currently have available.</p>
+        <a class="btn btn-outline" href="#contact">ASK ABOUT STOCK</a>
+      </div>
     </section>
 
+    <section class="contact-band" id="contact">
+      <p class="eyebrow">LET'S TALK</p>
+      <h2>GOT A DEAL FOR US?</h2>
+      <p>Contact S&amp;B Appliances today and tell us what you've got.</p>
+      <a class="btn btn-green" href="#sell">SEND AN ENQUIRY</a>
+      <p class="contact-placeholder">Business phone, email and service area to be added.</p>
+    </section>
   </main>
 
-  <footer>
-    <img src="assets/sb-logo.jpeg" alt="S&B Appliances logo">
-
-    <p>BUY • SELL • REUSE</p>
-
-    <small>© 2026 S&B Appliances. All rights reserved.</small>
-  </footer>
-
+  <footer><strong>S&amp;B APPLIANCES</strong><span>BUY • SELL • REUSE</span><small>© <span id="year"></span> S&amp;B Appliances. All rights reserved.</small></footer>
   <script src="script.js"></script>
-
 </body>
 </html>
